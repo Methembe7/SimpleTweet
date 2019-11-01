@@ -50,8 +50,6 @@ public class TweetsAdapter extends RecyclerView.Adapter<TweetsAdapter.ViewHolder
         return tweets.size();
     }
 
-
-
     //create a viewholder
     public class ViewHolder extends RecyclerView.ViewHolder{
 
