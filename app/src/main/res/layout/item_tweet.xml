@@ -28,12 +28,23 @@
 
     <TextView
         android:id="@+id/tvBody"
-        android:layout_width="wrap_content"
+        android:layout_width="346dp"
         android:layout_height="wrap_content"
         android:layout_below="@+id/tvScreenName"
         android:layout_marginStart="5dp"
         android:layout_marginTop="2dp"
         android:layout_toEndOf="@+id/ivProfileImage"
         android:text="Olaaa Olaaa"
-        android:textColor="@android:color/black"/>
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/tvTimeStamp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_toEndOf="@+id/tvScreenName"
+        android:fontFamily="sans-serif-medium"
+        android:text="5 hours ago"
+        android:textColor="@android:color/black"
+        android:textStyle="italic" />
 </RelativeLayout>
