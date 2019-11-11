@@ -6,6 +6,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -28,6 +29,9 @@ public class ComposeActivity extends AppCompatActivity {
     Button btnTweet;
 
     TwitterClient client;
+    TextView tvCount;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,6 +42,8 @@ public class ComposeActivity extends AppCompatActivity {
 
         btnTweet = findViewById(R.id.btnTweet);
         etCompose = findViewById(R.id.etCompose);
+        tvCount = findViewById(R.id.tvCount);
+
 
         //set click listener on button
         btnTweet.setOnClickListener(new View.OnClickListener() {
@@ -80,6 +86,27 @@ public class ComposeActivity extends AppCompatActivity {
                 });
             }
         });
+
+//        etCompose.addTextChangedListener(new TextWatcher() {
+//            @Override
+//            public void onTextChanged(CharSequence s, int start, int before, int count) {
+//                // Fires right as the text is being changed (even supplies the range of text)
+//
+//                value = etCompose.getText().toString();
+//            }
+//
+//            @Override
+//            public void beforeTextChanged(CharSequence s, int start, int count,
+//                                          int after) {
+//                // Fires right before text is changing
+//            }
+//
+//            @Override
+//            public void afterTextChanged(Editable s) {
+//                // Fires right after the text has changed
+//                etCompose.setText(s.toString());
+//            }
+//        });
 
 
 
