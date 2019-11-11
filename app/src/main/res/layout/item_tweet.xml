@@ -13,6 +13,7 @@
         android:layout_marginTop="0dp"
         android:background="@android:color/holo_blue_dark"
         android:src="@android:mipmap/sym_def_app_icon"
+
         />
 
     <TextView
